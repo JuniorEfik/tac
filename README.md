@@ -108,3 +108,11 @@ tacchaind q gov proposals
 tacchaind tx gov vote <PROPOSAL_ID> yes --from validator
 ```
 For improved security, validators should implement a sentry node architecture (which I'll be skipping)
+
+### Errors
+- ERR failure when running app err="error during handshake: error on replay: UPGRADE "v0.0.9" NEEDED at height: 872601: add eth_getBlockReceipts, disable x/feemarket, remove wasmd". Fix with:
+```
+git checkout v0.0.9
+make install
+tacchaind start --chain-id tacchain_2391-1 --home .testnet
+```
