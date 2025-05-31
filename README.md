@@ -116,3 +116,10 @@ git checkout v0.0.9
 make install
 tacchaind start --chain-id tacchain_2391-1 --home .testnet
 ```
+-  ERR error in proxyAppConn.FinalizeBlock err="UPGRADE \"v0.0.10\" NEEDED at height: 939826: enable x/feemarket tx fee checker" module=state server=node
+panic: Failed to process committed block (939826:81A87D8AD53ED5F599866B1F382D6A853D9063589A2048669F98C5D5C896D0C8): UPGRADE "v0.0.10" NEEDED at height: 939826: enable x/feemarket tx fee checker. Fix with:
+```
+git checkout v0.0.10
+make install
+tacchaind start --chain-id tacchain_2391-1 --home .testnet
+```
