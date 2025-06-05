@@ -123,3 +123,10 @@ git checkout v0.0.10
 make install
 tacchaind start --chain-id tacchain_2391-1 --home .testnet
 ```
+- panic: Failed to process committed block (1297619:A02286DF637B4513A53BB4EB7E273AB6AD1015E15957EBFCAF9B498CF56F3153): UPGRADE "v0.0.11" NEEDED at height: 1297619: allow non-EOA to stake via evm staking precompile and force 0 inflation
+```
+git fetch --all --tags
+git checkout v0.0.11
+make install
+tacchaind start --chain-id tacchain_2391-1 --home .testnet
+```
